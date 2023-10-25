@@ -3,12 +3,14 @@ Our blog has <%= Post.public_count %> posts and counting!
 
 <ul>
   <% @posts.each do |post| %>
-    <li>
-        <%= link_to post.title, post %>
-      <p>
-        <%= post.body %>
-      </p>    
-    </li>
+    <% unless post.archived? %>
+      <li>
+          <%= link_to post.title, post %>
+        <p>
+          <%= post.body %>
+        </p>    
+      </li>
+    <% end %>
   <% end %>
 </ul>
 
