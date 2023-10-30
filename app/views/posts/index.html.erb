@@ -1,17 +1,19 @@
-<h1>Posts</h1>
-Our blog has <%= Post.public_count %> posts and counting!
+<div class="posts">
+  <h1>Posts</h1>
+  Our blog has <%= Post.public_count %> posts and counting!
 
-<ul>
-  <% @posts.each do |post| %>
-    <% unless post.archived? %>
-      <li>
-          <%= link_to post.title, post %>
-        <p>
-          <%= post.body %>
-        </p>    
-      </li>
+  <ul>
+    <% @posts.each do |post| %>
+      <% unless post.archived? %>
+        <li>
+            <%= link_to post.title, post %>
+          <p>
+            <%= post.body %>
+          </p>    
+        </li>
+      <% end %>
     <% end %>
-  <% end %>
-</ul>
+  </ul>
 
-<%= link_to "New Post", new_post_path %>
+  <%= link_to "New Post", new_post_path %>
+</div>
