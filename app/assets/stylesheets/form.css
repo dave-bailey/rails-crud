@@ -1,0 +1,19 @@
+.form {
+    margin: 16px;
+}
+
+.form__title {
+    margin: 16px;
+}
+
+.form__body {
+    margin: 16px;
+}
+
+.form__status {
+    margin: 16px;
+}
+
+.form__submit {
+    margin: 16px 0;
+}
