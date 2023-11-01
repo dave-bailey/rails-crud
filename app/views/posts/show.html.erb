@@ -2,6 +2,10 @@
 <p><%= @post.body %></p>
 <p> Created <%= time_tag @post.created_at, "data-local": "time-ago" %>
 
+<p>
+  <strong><%= pluralize @post.comments.count, "comment" %></strong>
+</p>
+
 <ul>
   <li>
     <%= link_to "Edit", edit_post_path(@post) %>
