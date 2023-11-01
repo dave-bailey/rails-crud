@@ -1,5 +1,6 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.body %></p>
+<p> Created <%= time_tag @post.created_at, "data-local": "time-ago" %>
 
 <ul>
   <li>
