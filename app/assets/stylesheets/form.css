@@ -1,8 +1,13 @@
 .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 16px;
 }
 
 .form__title {
+    align-items: center;
+    display: flex;
     margin: 16px;
 }
 
@@ -11,6 +16,8 @@
 }
 
 .form__status {
+    align-items: center;
+    display: flex;
     margin: 16px;
 }
 
